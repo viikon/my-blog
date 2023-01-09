@@ -1,0 +1,25 @@
+H1 {
+    color: #27752f;
+    font-family: Courier;
+    display: flex;
+    justify-content: space-around;
+}
+
+H2 {
+    color: #27752f;
+    font-family: Courier;
+    display: flex;
+    justify-content: space-around;
+}
+
+p {
+    color: #383838;
+    font-family: Courier;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 15px;
+}
+
+body {
+    padding-left: 15px;
+}
