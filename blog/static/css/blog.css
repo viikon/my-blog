@@ -1,19 +1,19 @@
 H1 {
-    color: #27752f;
+    color: greenyellow;
     font-family: Courier;
     display: flex;
     justify-content: space-around;
 }
 
 H2 {
-    color: #27752f;
+    color: greenyellow;
     font-family: Courier;
     display: flex;
     justify-content: space-around;
 }
 
 p {
-    color: #383838;
+    color: brown;
     font-family: Courier;
     display: flex;
     justify-content: space-around;
