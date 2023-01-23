@@ -1,0 +1,31 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            {% if user.is_authenticated %}
+                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-list"></span></a>
+            {% endif %}
+            <h1><a href="/">JUST AN ART</a></h1>
+            <style> 
+                @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'); 
+            </style>
+        </div>
+
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
