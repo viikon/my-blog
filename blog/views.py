@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.shortcuts import get_object_or_404
+#"from .models import Post" - путь был указан так, но при тестировании возникала ошибка
 from .models import Post
 from django.utils import timezone
 from .forms import PostForm
