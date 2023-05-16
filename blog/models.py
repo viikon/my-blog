@@ -10,6 +10,12 @@ class Post(models.Model):
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
+    images = models.ImageField(
+        verbose_name = "Upload images",
+        blank = True,
+        upload_to = 'media/',
+        null=True, 
+    )
 
     def publish(self):
         self.published_date = timezone.now()
@@ -17,3 +23,5 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+

@@ -21,5 +21,9 @@ class HomePageTests(TestCase):
         self.assertIn('<h1><a href="/">JUST AN ART</a></h1>', html)
         self.assertTrue(html.endswith('</html>'))
 
+#class ArticalModelTests(TestCase):
+
+
+
 if __name__=="__main__":
     TestCase.main()    
